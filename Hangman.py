@@ -7,6 +7,7 @@ response = urllib.request.urlopen(word_url)
 long_txt = response.read().decode()
 words = long_txt.splitlines()
 selected_word = random.choice(words)
+
 word_slice = list(selected_word)
 all_words = list("-" * len(word_slice))
 health = len(word_slice)
